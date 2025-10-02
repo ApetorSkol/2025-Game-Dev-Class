@@ -5,9 +5,9 @@
     - love.draw() for drawing graphical objects
 ]]--
 
-require("game_controller") -- import controller
-require("game_movement") -- import modules with movement logic
-require("graphics")
+require("game_logic.game_controller") -- import controller
+require("game_logic.game_movement") -- import modules with movement logic
+require("utilities.graphics")
 
 io.stdout:setvbuf('no') -- write output immediately
 
@@ -18,7 +18,7 @@ function love.load()
     dir = 1
     radius = 20
     speed = 300
-    width, height = love.graphics.getDimensions()
+    window_width, window_height = love.graphics.getDimensions()
 end
 
 -- this is called for every frame

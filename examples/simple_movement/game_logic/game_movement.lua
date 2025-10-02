@@ -29,11 +29,11 @@ end
     function defines jumping of object to other side of screen in case it touches edges
 ]]--
 function overflow()
-    if pos_x > width or 0 > pos_x then
-        pos_x = width - pos_x
+    if pos_x > window_width or 0 > pos_x then
+        pos_x = window_width - pos_x
     end
 
-    if pos_y > height or 0 > pos_y then
-        pos_y = height - pos_y
+    if pos_y > window_height or 0 > pos_y then
+        pos_y = window_height - pos_y
     end
 end
