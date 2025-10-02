@@ -4,4 +4,7 @@ Love2D checks for `main.lua` file which should contain initial logic. To run any
 ```shell
 love .
 ```
-within the directory with `main.lua`.
+within the directory with `main.lua`. Or do
+```shell
+love with/path/to/the/main.lua
+```
