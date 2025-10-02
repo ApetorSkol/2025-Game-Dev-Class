@@ -6,7 +6,8 @@
 ]]--
 
 
-require("movement") -- import modules with logic
+require("movement") -- import modules with movement logic
+require("controller") -- import controller
 
 io.stdout:setvbuf('no') -- write output immediately
 
@@ -17,6 +18,7 @@ function love.load()
     dir = 1
     radius = 20
     speed = 300
+    width, height = love.graphics.getDimensions()
 end
 
 -- this is called for every frame
