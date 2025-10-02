@@ -5,9 +5,9 @@
     - love.draw() for drawing graphical objects
 ]]--
 
-require("game_logic.game_controller") -- import controller
-require("game_logic.game_movement") -- import modules with movement logic
-require("utilities.graphics")
+require("src.systems.game_controller") -- import controller
+require("src.systems.game_movement") -- import modules with movement logic
+require("src.utils.graphics")
 
 io.stdout:setvbuf('no') -- write output immediately
 
